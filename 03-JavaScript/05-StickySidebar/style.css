@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+	padding: 1em;
+}
+
+h2 {
+	margin-top: 50px;
+}
+
+.sidebar {
+  will-change: min-height;
+  float: left;
+}
+
+.sidebar__inner {
+  transform: translate(0, 0); // For browsers don't support translate3d
+  transform: translate3d(0, 0, 0);
+  will-change: position, transform;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+}
